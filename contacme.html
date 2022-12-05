@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Personal-site</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets/logom.png" alt="banner-logo" width="100" />
+        <!--cambiar la imagen-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#experiencies">Experiences</a></li>
+                <li><a href="contacme.html">Contact Me </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner-box">
+            <img src="assets/banner 1.jpg" alt="image banner" />
+            <div class="action">
+                <h3>Thank you for contacting me, I will be answering your message shortly</h3>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="formulario col-12 col-md-8">
+                        <form method="get" action="recibe.html">
+                            <fieldset>
+                                <label>Visitor Information</label>
+                                <label class="first">Full Name:
+                                    <input type="text" name="full-name" required pattern="[\sA-Za-z]{5,}" /></label>
+                                <label class="first">Email:
+                                    <input type="email" name="email" placeholder="happyday@gmail.com" /></label>
+                                <label class="first">Phone Number:
+                                    <input type="tel" name="phone" placeholder="***-***-****" required /></label>
+                                <label class="first">Zip code:
+                                    <input type="number" name="zip" pattern="(\d{5}([\-]\d{4})?)"
+                                        placeholder="Insert Zip code" /></label>
+                                <label class="first">Comments:
+                                    <textarea name="comments" id="comments" class="first textarea"></textarea></label>
+                                <input type="submit" value="Send" class="buttonForm" />
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>

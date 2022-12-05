@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Personal-site</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://cdn.glitch.com/04afa8a2-09b9-40d9-83c2-231900f2f4fc%2FMR%20LOGO.jpg?v=1604006355174"
+        alt="banner-logo"
+        width="100"
+      />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="contact-me.html">Contact Me </a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      
+     <h2 class="contactme">
+       Contact Me!
+        </h2>
+        
+        
+        <img
+          class="img-center"
+          src="https://cdn.glitch.com/04afa8a2-09b9-40d9-83c2-231900f2f4fc%2FWebsite%20Design%20-%20Ads%20Digital%20Web%20Service.png?v=1605307286448"
+          alt="image-for-contact-me"
+        />
+
+  
+        
+        <p class="paragraph-1">
+          You can contact me through my social media or if you wish you can send
+          a message in this space and without a doubt I will answer your message
+          as soon as possible.</p>
+
+       <p class="email-whatsapp">
+         <img
+            class="gmail-personal"
+            src="https://cdn.glitch.com/04afa8a2-09b9-40d9-83c2-231900f2f4fc%2FNew%20Gmail%20vector%20logo%20(.EPS%20%2B%20.SVG)%20download%20for%20free.png?v=1606942274180"
+            alt="gmail-logo"
+            height="30"
+            width="30"
+          />
+
+          melany.salome.ramirez@gmail.com
+
+          <img
+            class="whatsappnumber"
+            src="https://cdn.glitch.com/04afa8a2-09b9-40d9-83c2-231900f2f4fc%2Fwhatsapp.png?v=1604812545210"
+            alt="whatsApp-logo"
+            height="30"
+            width="30"
+          />
+
+          whatsapp: +5491149802303
+  </p> 
+      
+      <div id="feedback"></div>
+      <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="user_name"
+              placeholder="Enter your name here"
+            />
+          </li>
+          <li>
+            <label for="mail">E-mail:</label>
+            <input
+              type="email"
+              id="mail"
+              name="user_email"
+              placeholder="Enter your email here"
+            />
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea
+              id="msg"
+              name="user_message"
+              placeholder="Type your message here"
+            ></textarea>
+          </li>
+          <li class="button2">
+            <button type="submit">
+              Submit your message
+            </button>
+          </li>
+        </ul>
+      </form>
+      <script>
+        const feedbackElement = document.getElementById("feedback");
+        const formElement = document.forms[0];
+        formElement.addEventListener("submit", function(e) {
+          e.preventDefault();
+          feedbackElement.innerHTML =
+            "Hello " +
+            formElement.user_name.value +
+            "! Thank you for your message. Talk to you as soon as possible!";
+          feedbackElement.style.display = "block";
+          document.body.classList.toggle("moveDown");
+        });
+      </script>
+    </main>
+    <footer>
+      &copy;Portfolio- Melany Ramirez-1004
+      <div class="site-plan-link">
+        <a href="site-plan.html" style="color:white;" >Site-Plan</a>
+      </div>
+      <div class="social">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/jonaticadirectionerjb"
+        >
+          <img
+            src="https://cdn.glitch.com/4c1ba7dd-cd06-47c0-85ae-c460bdaa28bf%2Flogo%20facebook.jpg?v=1602092259798"
+            alt="facebook"
+            height="40"
+            width="40"
+          />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/lovetotravel93/">
+          <img
+            src="https://cdn.glitch.com/4c1ba7dd-cd06-47c0-85ae-c460bdaa28bf%2Finsta%202.0.jpg?v=1602092245908"
+            alt="instagram"
+            height="40"
+            width="40"
+          />
+        </a>
+        <a target="_blank" href="https://twitter.com/meljonas2">
+          <img
+            src="https://cdn.glitch.com/4c1ba7dd-cd06-47c0-85ae-c460bdaa28bf%2Ftwitter.jpg?v=1602092265244"
+            alt="twitter"
+            height="40"
+            width="40"
+          />
+        </a>
+        <a
+          target="_blank"
+          href="https://ar.pinterest.com/foreverjoantik/_saved/"
+        >
+          <img
+            src="https://cdn.glitch.com/4c1ba7dd-cd06-47c0-85ae-c460bdaa28bf%2FPinterest%20Latinoam%C3%A9rica%20%E2%80%93%20Medium.png?v=1602092275094"
+            alt="pinterest"
+            height="40"
+            width="40"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
